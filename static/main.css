@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+  background-color: #00BFA6;
+  font-family: Josefin Sans, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 100;
+}
+
+nav a {
+  color: #fff;
+  position: relative;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+nav a::after {
+  content: "";
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+.logo{
+    font-family: Abril Fatface;
+    font-size: 40px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:10;
+    text-align: center;
+    margin:0 auto;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.table{
+    max-width: 500px;
+    margin: 10px 430px;
+    background: white;
+    text-align: center;
+    margin-top: 10%;
+    padding: 10px;
+}
+.header{
+    text-align: center;
+    padding: 10px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
+
+footer {
+   text-align: center;
+   position:fixed;
+   bottom:0;
+   color: #fff;
+   padding: 20px;
+   width:100%;
+   height:50px;   /* Height of the footer */
+   background:#00BFA6;
+}
+footer .fa-heart {
+  color: red;
+}
+
+@media screen and(max-width: 1024px) {
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+    }
+}
