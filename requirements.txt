@@ -4,16 +4,16 @@ Flask==1.1.2
 Flask-Cors==3.0.8
 itsdangerous==1.1.0
 Jinja2==2.11.2
-joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
-MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+joblib == file:///tmp/build/80754af9/joblib_1594236160679/work
+MarkupSafe == file:///C:/ci/markupsafe_1594405949945/work
 mkl-fft==1.1.0
 mkl-random==1.1.1
 mkl-service==2.3.0
 numpy==1.18.5
 package-name==0.1
-scikit-learn @ file:///C:/ci/scikit-learn_1592847564598/work
+scikit-learn == file:///C:/ci/scikit-learn_1592847564598/work
 scipy @ file:///C:/ci/scipy_1592916958183/work
 six==1.15.0
-threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+threadpoolctl == file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
 Werkzeug==1.0.1
 wincertstore==0.2
