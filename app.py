@@ -6,11 +6,11 @@ import os
 
 app = Flask(__name__) # initializing a flask app
 
-@app.route('/', methods=['GET'])  # route to display the home page
+@app.route('/', methods=['GET','POST'])  # route to display the home page
 def homePage():
     return render_template("index.html")
 
-@app.route('/predict', methods=['POST']) # route to show the predictions in a web UI
+@app.route('/predict', methods=['GET','POST']) # route to show the predictions in a web UI
 def index():
     if request.method == 'POST':
         try:
