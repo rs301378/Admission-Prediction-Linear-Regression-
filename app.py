@@ -1,18 +1,14 @@
-from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS,cross_origin
+from flask import Flask, render_template, request
 import pickle
-import sklearn
 import os
 
 app = Flask(__name__) # initializing a flask app
 
-@app.route('/',methods=['GET'])  # route to display the home page
-@cross_origin()
+@app.route('/', methods=['GET','POST'])  # route to display the home page
 def homePage():
     return render_template("index.html")
 
-@app.route('/predict',methods=['POST','GET']) # route to show the predictions in a web UI
-@cross_origin()
+@app.route('/predict', methods=['POST']) # route to show the predictions in a web UI
 def index():
     if request.method == 'POST':
         try:
@@ -43,8 +39,9 @@ def index():
         return render_template('index.html')
 
 
+port = int(os.getenv("PORT"))
+
 if __name__ == "__main__":
     #app.run(host='127.0.0.1', port=8001, debug=True)
-    port = int(os.environ.get("PORT", 8000))
+    app.run(host='0.0.0.0', port=port)
     app.run(debug=True)
-	#app.run(debug=True) # running the app
